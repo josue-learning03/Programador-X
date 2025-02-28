@@ -6,33 +6,54 @@
     <title>Document</title>
 </head>
 <body>
+    <!--Formularios-->
 
-    <table>
-<!--Encabezado-->
-    <tr>
-    <th>Tecnologia Web |</th>
-    <th>Funcion |</th>
-    <th>Logo</th>
-    </tr>
-<!--Primera fila-->
-    <tr>
-        <td>HTML</td>
-        <td>Estructura</td>
-        <td><img src="./ImagenesX/html.png" alt="html" width="85"></td>
-    </tr>
-    <!--segunda fila-->
-    <tr>
-        <td>CSS</td>
-        <td>Estilo</td>
-        <td><img src="./ImagenesX/css.png" alt="Css" width="85"></td>
-    </tr>
-     <!--tercera fila-->
-     <tr>
-        <td>JAVASCRIPT</td>
-        <td>Intecractividad</td>
-        <td><img src="./ImagenesX/js.png" alt="js" width="85"></td>
-    </tr>
-    </table>
+<label for="">password:<input type="password"></label><br>
+<label for="">search:<input type="search"><br></label>
+<label for="">Phone:<input type="phone"></label><br>
+<label for="">fecha<input type="date"></label><br>
+<label for="">color: <input type="color"></label><br>
+
+<label for="">File: <input accept="image/*" type="file" multiple></label><br>
+
+<label for="">checkbox: <input  type="checkbox" value="false" ></label><br><br>
+
+<!--Area del texto-->
+  
+<p>Aqui se inserta el texto <br>
+<textarea name="texto" id="any" cols="20" rows="10"></textarea></p>
+
+<!--Campos -->
+
+<fieldset>
+<legend>checkbox</legend>
+<input type="checkbox" name="num">
+<label for="uno">uno</label>
+<input type="checkbox" name="num">
+<label for="two">dos</label>
+<input type="checkbox" name="num">
+<label for="three">tres</label>
+</fieldset>
+
+
+<fieldset>
+    <legend>checkbox</legend>
+    <input type="radio" name="num">
+    <label for="uno">uno</label>
+    <input type="radio" name="num">
+    <label for="two">dos</label>
+    <input type="radio" name="num">
+    <label for="three">tres</label>
+ </fieldset><br><br>
+
+<form action="./action.php" method="post">
+    <label for="name">nombre:</label>
+<input id="name" name="text" type="text" placeholder="nombre">
+<label >
+    <input type="text" required  placeholder="apellido" value="">
+</label>
+</form>
+
 
 </body>
 </html>
