@@ -6,54 +6,50 @@
     <title>Document</title>
 </head>
 <body>
-    <!--Formularios-->
+   
+<header>
+    <head>
+        <h1>Formulario en HTML</h1>
+    </head>
+</header>
+<main>
+   
+<form action="ejemplo" method="post">
+    <section>
+        <h2>Datos Personales</h2><br>
+        <p><label>Nombre: <input type="text"></label></p>
+        <p><label>Correo Electronico: <input type="text"></label></p>
+        <p><label>Telefonos: <input type="phone"></label></p>
+    </section>
+    <section>
+        <h2>Genero</h2>
+        <input name="gender" id="male" type="radio">
+        <label for="male">Masculino</label><br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Femenino</label><br>
+        <input type="radio" id="otro" name="gender">
+        <label for="otro">Otros</label>
+    </section>
+    <section>
+        <h2>Preferencias</h2>
+        <input type="checkbox" id="musica" name="preference">
+        <label for="musica">Musica</label><br>
 
-<label for="">password:<input type="password"></label><br>
-<label for="">search:<input type="search"><br></label>
-<label for="">Phone:<input type="phone"></label><br>
-<label for="">fecha<input type="date"></label><br>
-<label for="">color: <input type="color"></label><br>
+        <input type="checkbox" id="deportes" name="preference">
+        <label for="deportes">Deportes</label><br>
 
-<label for="">File: <input accept="image/*" type="file" multiple></label><br>
+        <input type="checkbox" id="lectura" name="preference">
+        <label for="lectura">Lectura</label>
+    </section>
+    <section>
+        <h2>comentario</h2>
+        <textarea name="texto" id="t1" cols="20" rows="20"></textarea>
 
-<label for="">checkbox: <input  type="checkbox" value="false" ></label><br><br>
-
-<!--Area del texto-->
-  
-<p>Aqui se inserta el texto <br>
-<textarea name="texto" id="any" cols="20" rows="10"></textarea></p>
-
-<!--Campos -->
-
-<fieldset>
-<legend>checkbox</legend>
-<input type="checkbox" name="num">
-<label for="uno">uno</label>
-<input type="checkbox" name="num">
-<label for="two">dos</label>
-<input type="checkbox" name="num">
-<label for="three">tres</label>
-</fieldset>
-
-
-<fieldset>
-    <legend>checkbox</legend>
-    <input type="radio" name="num">
-    <label for="uno">uno</label>
-    <input type="radio" name="num">
-    <label for="two">dos</label>
-    <input type="radio" name="num">
-    <label for="three">tres</label>
- </fieldset><br><br>
-
-<form action="./action.php" method="post">
-    <label for="name">nombre:</label>
-<input id="name" name="text" type="text" placeholder="nombre">
-<label >
-    <input type="text" required  placeholder="apellido" value="">
-</label>
+    </section>
+    <button>submit</button>
 </form>
 
+</main>
 
 </body>
 </html>
